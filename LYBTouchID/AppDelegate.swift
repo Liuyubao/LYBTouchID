@@ -67,19 +67,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                 print("恭喜，您通过了Touch ID指纹验证！")
                                 OperationQueue.main.addOperation
                                     {
-                                        
                                         vc.gestureView.isHidden = true
-                                        
                                 }
                                 return
-                                
                             }
                             else
                             {
                                 print("抱歉，您未能通过Touch ID指纹验证！\n\(String(describing: error))")
                             }
                     })
-                    
                 }
                 else
                 {
